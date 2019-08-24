@@ -1,0 +1,13 @@
+service: line-notify-sns-consumer
+provider:
+  name: aws
+  runtime: python3.7
+  region: us-east-1
+
+functions:
+  line_bot:
+    handler: handler.webhook
+    events:
+      - sqs: arn:aws:sqs:us-east-1:901588721449:LINE_notify_consumer
+plugins:
+  - serverless-python-requirements
