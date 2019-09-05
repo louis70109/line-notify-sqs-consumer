@@ -1,4 +1,4 @@
-# LINE-Notify-SNS-Consumer
+# LINE-Notify-SQS-Consumer
 
 This project is using AWS SQS to send LINE Notify message.
 
@@ -32,7 +32,7 @@ export AWS_SECRET_ACCESS_KEY=<your-secret-key-here>
 3. Clone this project
 
 ```bash=
-$ serverless install --url https://github.com/louis70109/line-notify-sns-consumer -n <YOUR_FILE_NAME>
+$ serverless install --url https://github.com/louis70109/line-notify-sqs-consumer -n <YOUR_FILE_NAME>
 $ cd <YOUR_FILE_NAME>/
 ```
 
